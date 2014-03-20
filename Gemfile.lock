@@ -37,8 +37,6 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
-    fancybox2-rails (0.2.7)
-      railties (>= 3.1.0, < 5.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -89,6 +87,8 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    shadowbox-rails (0.0.4)
+      sass-rails
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -117,7 +117,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  fancybox2-rails (~> 0.2.7)
   jbuilder (~> 1.2)
   jquery-rails
   pg
@@ -125,5 +124,6 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.2)
   sdoc
+  shadowbox-rails
   turbolinks
   uglifier (>= 1.3.0)
