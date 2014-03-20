@@ -3,7 +3,7 @@ ruby "2.1.1"
 
 gem 'rails_12factor', group: :production
 gem 'pg'
-
+gem 'fancybox2-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
