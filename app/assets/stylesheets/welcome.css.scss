@@ -44,6 +44,12 @@
           a:hover{
             color: #aa4d09;
           }
+          a:hover:after{
+            content: '\025B8';
+            padding: 0;
+            margin: 0;
+            font-size: 1.7vw;
+          }
         }
       }
     }
@@ -55,12 +61,18 @@
       display: table;
       padding-left: 10%;
       height: 17%;
+      p{
+        font-size: 1.1vw;
+      }
     }
     #description{
       display: table;
       padding-left: 10%;
       padding-right: 10%;
       height: 20%;
+      p{
+        font-size: 1.1vw;
+      }
     }
     #footer-logo{
       display: table;
@@ -69,6 +81,7 @@
       height: 12%;
       p{
         color: #aa4d09;
+        font-size: 0.8vw;
       }
     }
   }
