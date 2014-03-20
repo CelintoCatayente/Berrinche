@@ -15,11 +15,15 @@
     #logo{
       height: 12%;
       display: table;
+      width: 100%;
       li{
         padding-left: 5%;
         display: table-cell;
         vertical-align: middle;
         list-style: none;
+        img{
+          width: 100%;
+        }
       }
     }
     #menu{
@@ -49,6 +53,7 @@
             padding: 0;
             margin: 0;
             font-size: 1.7vw;
+            padding-left: 2%;
           }
         }
       }
@@ -63,6 +68,7 @@
       height: 17%;
       p{
         font-size: 1.1vw;
+        font-family: "Bell-mt";
       }
     }
     #description{
@@ -130,8 +136,7 @@
       }
       
       #first-row{
-        height: 33.4%;
-        background-color:red;
+        height: 33.3333333333333333%;
       }
       #second-row{
         height: 33.3333333333333333%;
