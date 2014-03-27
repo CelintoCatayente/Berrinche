@@ -10,12 +10,16 @@
       vertical-align: middle;
     }
     height: 100%;
-    width: 20%;
+    width: 18%;
     float:left;
+    box-shadow: 1px 0px 57px #888888;
     #logo{
-      height: 12%;
+      height: 14%;
       display: table;
       width: 100%;
+      padding-right: 9%;
+      padding-left: 4%;
+      padding-top: 5%;
       li{
         padding-left: 5%;
         display: table-cell;
@@ -27,7 +31,8 @@
       }
     }
     #menu{
-      padding-left: 10%;
+      padding-top: 36%;
+      padding-left: 17%;
       height:32%;
       ul{
         height: 100%;
@@ -38,22 +43,34 @@
           display: table;
           height: 33.333333%;
           width: 100%;
+          a#menu-reel{
+            font-size: 2.5vw;
+            color: #820c09;
+            transition: all 0.5s ease;
+          }
+          a#menu-reel:hover{
+            -moz-transform: scale(1.04) translate(2%, 0);
+            -webkit-transform: scale(1.04) translate(2%, 0);
+            -o-transform: scale(1.04) translate(2%, 0);
+            -ms-transform: scale(1.04) translate(2%, 0);
+            transform: scale(1.04) translate(2%, 0);
+          }
           a{
             color: black;
             display: table-cell;
             vertical-align: middle;
             text-decoration: none; 
             font-size: 1.8vw;
-            font-family: "Concurso";
+            font-family: "BNL";
           }
           a:hover{
-            color: #aa4d09;
+            color: #820c09;
           }
-          a:hover:after{
+          a#menu-reel:after{
             content: '\025B8';
             padding: 0;
             margin: 0;
-            font-size: 1.6vw;
+            font-size: 2.5vw;
             padding-left: 2%;
           }
         }
@@ -66,20 +83,20 @@
     #definition{
       display: table;
       padding-left: 10%;
-      height: 17%;
+      height: 15%;
       p{
         font-size: 1.1vw;
-        font-family: "Concurso";
+        font-family: "BNL";
       }
     }
     #description{
       display: table;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 17%;
+      padding-right: 15%;
       height: 20%;
       p{
         font-size: 1.1vw;
-        font-family: "Concurso";
+        font-family: "LT";
       }
     }
     #footer-logo{
@@ -88,7 +105,7 @@
       padding-right: 10%;
       height: 12%;
       p{
-        color: #aa4d09;
+        color: #820c09;
         font-size: 0.8vw;
         font-family: "Concurso";
       }
@@ -97,6 +114,7 @@
   #right-section{
     float:left;
     #header{
+      padding-top: 0.9%;
       height: 8%;
       display: table;
       width: 100%;
@@ -105,9 +123,9 @@
         vertical-align: middle;
         text-align: center;
         a{
-          color: black;
+          color: #4f4f4f;
           text-decoration: none;
-          font-size: 2.2vw;
+          font-size: 1.5vw;
           font-family: "Concurso";
         }
         a:hover{
@@ -115,10 +133,10 @@
           border-left: 0;
           border-right: 0;
           border-bottom: 0;
-          border-color: #aa4d09;
+          border-color: #820c09;
         }
         a:active{
-          color: #aa4d09;
+          color: #820c09;
         }
       }
     }
@@ -150,7 +168,7 @@
     #footer{
       height: 10%;
     }
-    width: 80%;
+    width: 82%;
     height: 100%;
   }
 }

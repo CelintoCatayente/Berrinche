@@ -1,5 +1,17 @@
 @font-face {
   font-family: "Concurso";
-  src: asset-url("concursoitalian-btn-wide.ttf") format("truetype");
+  src: asset-url("BenchNine-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BNL";
+  src: asset-url("BenchNine-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LT";
+  src: asset-url("latothin.woff");
   font-style: normal;
 }
