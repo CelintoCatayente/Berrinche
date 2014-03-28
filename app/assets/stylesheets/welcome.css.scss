@@ -107,10 +107,22 @@
       padding-left: 17%;
       padding-right: 10%;
       height: 12%;
+      padding-top: 6%;
       p{
         color: #820c09;
         font-size: 1.5vw;
         font-family: "BNL";
+        float: left;
+        width: 100%;
+      }
+      p#tcit-add{
+        vertical-align: bottom;
+        font-size: 0.7vw;
+        float: left;
+        a{
+          text-decoration: none;
+          color: green;
+        }
       }
     }
   }
@@ -122,6 +134,8 @@
       height: 8%;
       display: table;
       width: 100%;
+      padding-left: 6%;
+      padding-right: 6%;
       li{
         display: table-cell;
         vertical-align: middle;
@@ -176,6 +190,7 @@
         background-color: #820c09;
         opacity: 0;
         display: table;
+        cursor: pointer;
         span{
           display: table-cell;
           vertical-align: middle;
