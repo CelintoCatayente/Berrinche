@@ -135,14 +135,14 @@
           font-family: "Concurso";
           cursor: pointer;
         }
-        a:hover{
+        a.active{
           border: solid;
           border-left: 0;
           border-right: 0;
           border-bottom: 0;
           border-color: #820c09;
         }
-        a:active{
+        a:hover{
           color: #820c09;
         }
       }

@@ -1,0 +1,420 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+@font-face {
+  font-family: "Concurso";
+  src: url(/assets/BenchNine-Bold.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BNL";
+  src: url(/assets/BenchNine-Light.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LT";
+  src: url(/assets/latothin.woff);
+  font-style: normal;
+}
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff;}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{background-color:#060606;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
+#sb-nav-close{background-image:url(close.png);}
+#sb-nav-next{background-image:url(next.png);}
+#sb-nav-previous{background-image:url(previous.png);}
+#sb-nav-play{background-image:url(play.png);}
+#sb-nav-pause{background-image:url(pause.png);}
+#sb-counter{float:left;width:45%;}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
+#sb-counter a.sb-counter-current{text-decoration:underline;}
+div.sb-message{font-size:12px;padding:10px;text-align:center;}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+/* line 4, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main {
+  width: 100%;
+  height: 100%;
+}
+/* line 7, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 18%;
+  float: left;
+  box-shadow: 1px 0px 57px #888888;
+}
+/* line 10, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar p {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 18, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #logo {
+  height: 14%;
+  display: table;
+  width: 100%;
+  padding-right: 9%;
+  padding-left: 4%;
+  padding-top: 5%;
+}
+/* line 25, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #logo li {
+  padding-left: 5%;
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+}
+/* line 30, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #logo li img {
+  width: 100%;
+}
+/* line 35, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu {
+  padding-top: 36%;
+  padding-left: 17%;
+  height: 32%;
+}
+/* line 39, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 44, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li {
+  display: table;
+  height: 33.333333%;
+  width: 100%;
+}
+/* line 48, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li a#menu-reel {
+  font-size: 2.5vw;
+  color: #820c09;
+  transition: all 0.5s ease;
+}
+/* line 53, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li a#menu-reel:hover {
+  -moz-transform: scale(1.04) translate(2%, 0);
+  -webkit-transform: scale(1.04) translate(2%, 0);
+  -o-transform: scale(1.04) translate(2%, 0);
+  -ms-transform: scale(1.04) translate(2%, 0);
+  transform: scale(1.04) translate(2%, 0);
+}
+/* line 60, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li a {
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.8vw;
+  font-family: "BNL";
+}
+/* line 68, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li a:hover {
+  color: #820c09;
+}
+/* line 71, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #menu ul li a#menu-reel:after {
+  content: '\025B8';
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vw;
+  padding-left: 2%;
+}
+/* line 81, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #social-bar {
+  padding-left: 17%;
+  height: 13%;
+  padding-right: 20%;
+  padding-top: 15%;
+}
+/* line 86, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #social-bar .social-icon {
+  width: 25%;
+  float: left;
+}
+/* line 89, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #social-bar .social-icon img {
+  max-width: 100%;
+  padding-right: 25%;
+}
+/* line 95, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #description {
+  display: table;
+  padding-left: 17%;
+  padding-right: 15%;
+  height: 29%;
+}
+/* line 100, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #description p {
+  font-size: 1.1vw;
+  font-family: "LT";
+}
+/* line 105, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #footer-logo {
+  display: table;
+  padding-left: 17%;
+  padding-right: 10%;
+  height: 12%;
+}
+/* line 110, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #left-bar #footer-logo p {
+  color: #820c09;
+  font-size: 1.5vw;
+  font-family: "BNL";
+}
+/* line 117, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section {
+  float: left;
+  position: relative;
+  width: 82%;
+  height: 100%;
+}
+/* line 120, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header {
+  padding-top: 0.9%;
+  height: 8%;
+  display: table;
+  width: 100%;
+}
+/* line 125, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+/* line 131, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li a {
+  color: #4f4f4f;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: "Concurso";
+  cursor: pointer;
+}
+/* line 138, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li a.active {
+  border: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-color: #820c09;
+}
+/* line 145, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li a:hover {
+  color: #820c09;
+}
+/* line 149, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li.hidden {
+  visibility: hidden;
+}
+/* line 152, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li#header-isologo {
+  z-index: 1;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+}
+/* line 157, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li#header-isologo div {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20%;
+}
+/* line 161, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #header li#header-isologo div img {
+  max-width: 60%;
+  cursor: pointer;
+}
+/* line 168, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic {
+  height: 82%;
+}
+/* line 171, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  background-color: #820c09;
+  opacity: 0;
+  display: table;
+}
+/* line 179, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-overlay span {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-family: Concurso;
+  font-size: 3vw;
+  padding-left: 10%;
+}
+/* line 188, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square-video-box .video-overlay span {
+  font-size: 4vw;
+}
+/* line 191, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square-video-box:hover .video-overlay {
+  opacity: 0.8;
+}
+/* line 194, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-box:hover .video-overlay {
+  opacity: 0.8;
+}
+/* line 197, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #big-row {
+  width: 100%;
+  height: 66%;
+}
+/* line 201, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-box {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 210, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-box a img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* line 215, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .video-box a img.active {
+  opacity: 1;
+}
+/* line 220, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+/* line 224, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square .video-box {
+  width: 50%;
+}
+/* line 227, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square .square-video-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background-image: url(/assets/reelbn.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 237, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square .square-video-box a img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* line 242, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square .square-video-box a img.active {
+  opacity: 1;
+}
+/* line 247, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #first-row {
+  height: 50%;
+}
+/* line 248, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #first-row .video-box {
+  background-image: url(/assets/fundacionbn.jpg);
+}
+/* line 251, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #first-row .video-box + .video-box {
+  background-image: url(/assets/autosbn.jpg);
+}
+/* line 256, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #second-row {
+  height: 50%;
+}
+/* line 257, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #second-row .video-box {
+  background-image: url(/assets/moribn.jpg);
+}
+/* line 260, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic .square #second-row .video-box + .video-box {
+  background-image: url(/assets/carpenterbn.jpg);
+}
+/* line 267, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #third-row {
+  height: 34%;
+}
+/* line 268, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #third-row .video-box {
+  background-image: url(/assets/greatwallbn.jpg);
+}
+/* line 271, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #third-row .video-box + .video-box {
+  background-image: url(/assets/ostbn.jpg);
+}
+/* line 274, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #third-row .video-box + .video-box + .video-box {
+  background-image: url(/assets/rodeobn.jpg);
+}
+/* line 277, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #video-mosaic #third-row .video-box + .video-box + .video-box + .video-box {
+  background-image: url(/assets/reconstruirbn.jpg);
+}
+/* line 283, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+#main #right-section #footer {
+  height: 10%;
+}
+
+/* line 291, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* line 295, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 298, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+p {
+  margin: 0;
+}
+
+/* line 301, /Users/tomascharad/Devapps/berrinche-site/app/assets/stylesheets/welcome.css.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
