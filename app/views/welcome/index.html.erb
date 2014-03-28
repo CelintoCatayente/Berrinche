@@ -7,13 +7,16 @@
     </div>
     <div id ="menu">
       <ul>
-        <li><a id="menu-reel" href="#">REEL 2013</a></li>
+        <li><a rel='shadowbox' href="http://player.vimeo.com/video/90256241" id="menu-reel" href="#">REEL 2013</a></li>
         <li><a href="#">CONTACTO</a></li>
         <li><a href="#">QUIÉNES SOMOS</a></li>
       </ul>
     </div>
-    <div id ="social-bar"></div>
-    <div id ="definition">
+    <div id="social-bar">
+      <div class="social-icon"><a target="_blank" href="http://www.facebook.com/Berrinche"><%= image_tag("facebook.png")%></a></div>
+      <div class="social-icon"><a target="_blank" href="http://twitter.com/_berrinche"><%= image_tag("twitter.png")%></a></div>
+      <div class="social-icon"><a target="_blank" href="http://instagram.com/_berrinche"><%= image_tag("instagram.png")%></a></div>
+      <div class="social-icon"><a target="_blank" href="http://vimeo.com/berrincheproducciones"><%= image_tag("vimeo.png")%></a></div>
     </div>
     <div id ="description">
       <p>
@@ -26,58 +29,83 @@
       </p>
     </div>
     <div id ="footer-logo">
-      <p>&#169;2014 BERRINCHE</p>
+      <p>&#169; BERRINCHE.CL</p>
     </div>
   </div>
   <div id="right-section">
     <div id="header">
-      <li><a href="#">DOCUMENTALES</a></li>
-      <li><a href="#">PUBLICIDAD</a></li>
-      
-      <li><a href="#">CORPORATIVOS</a></li>
-      <li><a href="#">TELEVISIÓN</a></li>
+      <li><a id="link-documentales">DOCUMENTALES</a></li>
+      <li><a id="link-publicidad">PUBLICIDAD</a></li>
+      <li class="hidden"><a>----------</a></li>
+      <li id="header-isologo"><div><%= image_tag("isologo.png", id: "link-self-production")%></div></li>
+      <li><a id="link-corporativos">CORPORATIVOS</a></li>
+      <li><a id="link-television">TELEVISIÓN</a></li>
     </div>
     <div id="video-mosaic">
-      <div id="first-row">
-        <div class="video-box">
-          <a rel='shadowbox' href="http://player.vimeo.com/video/82628744?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1 width='560' height='315' frameborder='0' webkitAll	owFullScreen mozallowfullscreen allowFullScreen"><%= image_tag("test.jpg")%></a>
+      <div id="big-row">
+        <div class="square">
+          <div class="square-video-box self-production">
+            <div class="video-overlay">
+              <span>Reel 2013</span>
+            </div>
+            <a rel='shadowbox' href="http://player.vimeo.com/video/90256241"><%= image_tag("reel.jpg")%></a>
+          </div>
         </div>
-        <div class="video-box">
-          <a rel='shadowbox' href="http://vimeo.com/85526480"><%= image_tag("test.jpg")%></a>
-        </div>
-        <div class="video-box">
-          <a href="http://vimeo.com/85448139"><%= image_tag("test.jpg")%></a>
-        </div>
-        <div class="video-box">
-          <a href="http://vimeo.com/82631197"><%= image_tag("test.jpg")%></a>
-        </div>
-      </div>
-      <div id="second-row">
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
-        </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
-        </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
-        </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
+        <div class="square">
+          <div id="first-row">
+            <div class="video-box corporativos">
+              <div class="video-overlay">
+                <span>ANIMACIÓN FUNDACIÓN CHILE</span>
+              </div>
+              <a rel='shadowbox' href="http://player.vimeo.com/video/90249329"><%= image_tag("fundacion.jpg")%></a>
+            </div>
+            <div class="video-box self-production">
+              <div class="video-overlay">
+                <span>EXPERIENCIAS</span>
+              </div>
+              <a rel='shadowbox' href="http://player.vimeo.com/video/85526480"><%= image_tag("autos.jpg")%></a>
+            </div>
+          </div>
+          <div id="second-row">
+            <div class="video-box publicidad">
+              <div class="video-overlay">
+                <span>SPOT TEATRO MORI</span>
+              </div>
+              <a rel='shadowbox' href="http://player.vimeo.com/video/90245621"><%= image_tag("mori.jpg")%></a>
+            </div>
+            <div class="video-box publicidad">
+              <div class="video-overlay">
+                <span>SPOT CARPENTER</span>
+              </div>
+              <a rel='shadowbox' href="http://player.vimeo.com/video/86044654"><%= image_tag("carpenter.jpg")%></a>
+            </div>
+          </div>
         </div>
       </div>
       <div id="third-row">
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
+        <div class="video-box publicidad">
+          <div class="video-overlay">
+            <span>GREAT WALL Y HOTEL SURAZO</span>
+          </div>
+          <a rel='shadowbox' href="http://player.vimeo.com/video/82631194"><%= image_tag("greatwall.jpg")%></a>
         </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
+        <div class="video-box television">
+          <div class="video-overlay">
+            <span>INTRO OST 2014</span>
+          </div>
+          <a rel='shadowbox' href="http://player.vimeo.com/video/85448139"><%= image_tag("ost.jpg")%></a>
         </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
+        <div class="video-box documentales">
+          <div class="video-overlay">
+            <span>RODEO, DEPORTE NACIONAL?</span>
+          </div>
+          <a rel='shadowbox' href="http://player.vimeo.com/video/82631190"><%= image_tag("rodeo.jpg")%></a>
         </div>
-        <div class="video-box">
-          <a href="#"><%= image_tag("test.jpg")%></a>
+        <div class="video-box documentales">
+          <div class="video-overlay">
+            <span>RECONSTRUIR NO ES LEVANTAR</span>
+          </div>
+          <a rel='shadowbox' href="http://player.vimeo.com/video/86036270"><%= image_tag("reconstruir.jpg")%></a>
         </div>
       </div>
     </div>
