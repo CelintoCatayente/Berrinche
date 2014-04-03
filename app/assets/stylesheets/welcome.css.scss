@@ -274,7 +274,8 @@
         }
         #second-row{
           .video-box{
-            background-image: image-url("moribn.jpg");
+            background-image: image-url("ostbn.jpg");
+            
           }
           .video-box + .video-box{
             background-image: image-url("carpenterbn.jpg");
@@ -288,13 +289,13 @@
           background-image: image-url("greatwallbn.jpg");
         }
         .video-box + .video-box{
-          background-image: image-url("ostbn.jpg");
+          background-image: image-url("reconstruirbn.jpg");
         }
         .video-box + .video-box + .video-box{
-          background-image: image-url("rodeobn.jpg");
+          background-image: image-url("moribn.jpg");
         }
         .video-box + .video-box + .video-box + .video-box{
-          background-image: image-url("reconstruirbn.jpg");
+          background-image: image-url("rodeobn.jpg");
         }
         height: 34%;
       }
