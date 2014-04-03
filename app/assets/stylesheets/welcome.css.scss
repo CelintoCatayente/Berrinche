@@ -107,7 +107,7 @@
       padding-left: 17%;
       padding-right: 10%;
       height: 12%;
-      padding-top: 6%;
+      padding-top: 7%;
       p{
         color: #820c09;
         font-size: 1.5vw;
@@ -131,7 +131,7 @@
     position: relative;
     #header{
       padding-top: 0.9%;
-      height: 8%;
+      height: 7.5%;
       display: table;
       width: 100%;
       padding-left: 6%;
@@ -180,7 +180,7 @@
       }
     }
     #video-mosaic{
-      height: 82%;
+      height: 83%;
       
       .video-overlay{
         width: 100%;
@@ -191,17 +191,18 @@
         opacity: 0;
         display: table;
         cursor: pointer;
+        transition: all 0.7s ease;
         span{
           display: table-cell;
           vertical-align: middle;
           color: white;
           font-family: Concurso;
-          font-size: 2vw;
+          font-size: 1.3vw;
           padding-left: 10%;
         }
       }
       .square-video-box .video-overlay span{
-        font-size: 3vw;
+        font-size: 2vw;
       }
       .square-video-box:hover .video-overlay{
         opacity: 0.8;
@@ -296,7 +297,7 @@
       }
     }
     #footer{
-      height: 10%;
+      height: 9.5%;
       #sponsors-carousel{
         height: 100%;
         div{

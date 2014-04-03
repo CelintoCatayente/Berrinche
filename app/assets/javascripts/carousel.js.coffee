@@ -16,8 +16,8 @@ $(window).load ->
 
       items:
         visible:
-          min: 4
-          max: 4
+          min: 7
+          max: 7
 $(window).load ->
   carousel = $("#sponsors-carousel")
   carousel.carouFredSel
@@ -35,5 +35,5 @@ $(window).load ->
 
     items:
       visible:
-        min: 4
-        max: 4
+        min: 7
+        max: 7
