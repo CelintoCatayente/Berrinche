@@ -11276,8 +11276,8 @@ return jQuery;
         },
         items: {
           visible: {
-            min: 7,
-            max: 7
+            min: 8,
+            max: 8
           }
         }
       });
@@ -11303,8 +11303,8 @@ return jQuery;
       },
       items: {
         visible: {
-          min: 7,
-          max: 7
+          min: 8,
+          max: 8
         }
       }
     });
@@ -15567,11 +15567,6 @@ return jQuery;
 
 
 })(jQuery);
-$(window).resize(function() {
-  $("a").css("z-index", 1);
-  $("p").css("z-index", 1);
-  $("span").css("z-index", 1);
-});
 /*
  * Shadowbox.js, version 3.0.3
  * http://shadowbox-js.com/
@@ -15612,7 +15607,6 @@ T.find=(function(){var aR=/((?:\((?:\([^()]+\)|[^()]+)+\)|\[(?:\[[^[\]]*\]|['"][
     });
     $("#link-self-production").click(function() {
       $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active");
-      $("#link-documentales").addClass("active");
       $("#video-mosaic img").removeClass("active");
       return $("#video-mosaic .self-production img").addClass("active");
     });

@@ -59,6 +59,21 @@ and (min-width : 0px)
   body #main #right-section #video-mosaic #third-row {
     height: 152.954px;
   }
+  html body #main #left-bar #menu ul li a {
+    font-size: 26px;
+  }
+  body #main #left-bar #menu ul li a#menu-reel {
+    font-size: 26px;
+  }
+  body #main #left-bar #description p {
+    font-size: 14px;
+  }
+  body #main #left-bar #footer-logo p {
+    font-size: 19px;
+  }
+  #main #right-section #header li a{
+    font-size: 19px;
+  }
 }
 @media only screen
 and (max-height : 679px)
