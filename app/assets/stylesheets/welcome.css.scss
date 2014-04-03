@@ -86,9 +86,12 @@
       .social-icon{
         width: 25%;
         float: left;
-        img{
-          max-width: 100%;
-          padding-right: 25%;
+        padding-right: 4%;
+        a{
+          img{
+            max-width: 100%;
+            
+          }
         }
       }
     }
@@ -134,7 +137,7 @@
       height: 7.5%;
       display: table;
       width: 100%;
-      padding-left: 6%;
+      padding-left: 2%;
       padding-right: 6%;
       li{
         display: table-cell;

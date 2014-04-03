@@ -20,7 +20,6 @@ $(document).on "page:change", ()->
     
   $("#link-self-production").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
-    $("#link-documentales").addClass("active")
     $("#video-mosaic img").removeClass("active")
     $("#video-mosaic .self-production img").addClass("active")
   
