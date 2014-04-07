@@ -1,6 +1,6 @@
 <div id="main">
   <div id="left-bar">
-    <a href="/">
+    <a>
       <div id ="logo">
         <li>
         <%= image_tag("logo.png")%>
@@ -10,8 +10,8 @@
     <div id ="menu">
       <ul>
         <li><a rel='shadowbox' href="http://player.vimeo.com/video/90256241?autoplay=1" id="menu-reel" href="#">REEL 2013</a></li>
-        <li><a href="#">CONTACTO</a></li>
-        <li><a href="#">QUIÉNES SOMOS</a></li>
+        <li><a id="contact-link" href="">CONTACTO</a></li>
+        <li><a id="what-we-do-link" href="">¿QUÉ HACEMOS?</a></li>
       </ul>
     </div>
     <div id="social-bar">
@@ -132,16 +132,16 @@
     </div>
     <div id="footer">
       <div id="sponsors-carousel">
-        <div><%= image_tag("ausp-c13.png") %></div>
-        <div><%= image_tag("ausp-carpenter.png") %></div>
-        <div><%= image_tag("ausp-greatwall.png") %></div>
+        <div><a target="_blank" href="http://www.13.cl/c"><%= image_tag("ausp-c13.png") %></a></div>
+        <div><a target="_blank" href="http://www.carpenter.cl/"><%= image_tag("ausp-carpenter.png") %></a></div>
+        <div><a target="_blank" href="http://www.greatwallmotors.cl/"><%= image_tag("ausp-greatwall.png") %></a></div>
         <div><%= image_tag("ausp-innovation.png") %></div>
-        <div><%= image_tag("ausp-mori.png") %></div>
-        <div><%= image_tag("ausp-nexos.png") %></div>
-        <div><%= image_tag("ausp-tricao.png") %></div>
-        <div><%= image_tag("ausp-udd.png") %></div>
-        <div><%= image_tag("ausp-chile.png") %></div>
-        <div><%= image_tag("ausp-siempre.png") %></div>
+        <div><a target="_blank" href="http://www.centromori.cl/"><%= image_tag("ausp-mori.png") %></a></div>
+        <div><a target="_blank" href="http://www.nexos.cl/"><%= image_tag("ausp-nexos.png") %></a></div>
+        <div><a target="_blank" href="http://tricao.cl/"><%= image_tag("ausp-tricao.png") %></a></div>
+        <div><a target="_blank" href="http://www.udd.cl/"><%= image_tag("ausp-udd.png") %></a></div>
+        <div><a target="_blank" href="http://chilesiempre.cl/"><%= image_tag("ausp-chile.png") %></a></div>
+        <div><a target="_blank" href="http://www.siempreporlavida.cl/"><%= image_tag("ausp-siempre.png") %></a></div>
       </div>
     </div>
   </div>

@@ -6,6 +6,10 @@ $(document).on "page:change", ()->
     overlayOpacity: 0.9
 
 $(document).on "page:change", ()->
+  $("#logo > li > img").click ->
+    $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
+    $("#video-mosaic img").addClass("active")
+    
   $("#link-documentales").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
     $("#link-documentales").addClass("active")

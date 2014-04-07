@@ -74,6 +74,16 @@ and (min-width : 0px)
   #main #right-section #header li a{
     font-size: 19px;
   }
+  
+  #main #right-section #video-mosaic .square-video-box a .video-overlay > span{
+    font-size: 26px;
+  }
+  #main #right-section #video-mosaic .video-box a div span{
+    font-size: 17px;
+  }
+  #main #right-section div#header li a{
+    font-size: 19px;
+  }
 }
 @media only screen
 and (max-height : 679px)

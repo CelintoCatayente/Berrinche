@@ -29,6 +29,7 @@
         list-style: none;
         img{
           width: 100%;
+          cursor: pointer;
         }
       }
     }
@@ -192,12 +193,10 @@
         position: absolute;
         background-color: #820c09;
         opacity: 0;
-        display: table;
         cursor: pointer;
+        padding-top: 25%;
 
         span{
-          display: table-cell;
-          vertical-align: middle;
           color: white;
           font-family: Concurso;
           font-size: 1.3vw;
@@ -206,12 +205,6 @@
       }
       .square-video-box .video-overlay span{
         font-size: 2vw;
-      }
-      .square-video-box:hover .video-overlay{
-        opacity: 0.8;
-      }
-      .video-box:hover .video-overlay{
-        opacity: 0.8;
       }
       #big-row{
         width: 100%;
