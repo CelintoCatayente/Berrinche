@@ -372,3 +372,11 @@ p{
   border-bottom: solid;
   border-bottom-width: 1px;
 }
+#contact-modal{
+  input, textarea{
+    width: 100%;
+  }
+  label{
+    font-family: "Concurso";
+  }
+}

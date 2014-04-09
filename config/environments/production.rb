@@ -79,4 +79,13 @@ BerrincheSite::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
   
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smpt.berrinche.cl',
+    domain:               'berrinche.cl',
+    user_name:            'contacto@berrinche.cl',
+    password:             'berrinche',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
 end

@@ -2,6 +2,8 @@ BerrincheSite::Application.routes.draw do
   get "welcome/index"
   
   root "welcome#index"
+  
+  post "/contact" => 'welcome#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
