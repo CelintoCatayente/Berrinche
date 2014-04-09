@@ -4,6 +4,15 @@
 $(document).on "page:change", ()->
   Shadowbox.init
     overlayOpacity: 0.9
+    
+  $(window).load ->
+    $('#contact-link').click ->
+      Shadowbox.open
+        content: "<div id=\'welcome-msg\'>Welcome to my website!</div>"
+        player: "html"
+        title: "Welcome"
+        height: 350
+        width: 350
 
 $(document).on "page:change", ()->
   $("#logo > li > img").click ->

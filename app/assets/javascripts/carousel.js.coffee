@@ -13,6 +13,11 @@ $(window).load ->
       swipe:
         onTouch: true
         onMouse: true
+      next:
+        button: "#footer-right-arrow"
+      prev:
+        button: "#footer-left-arrow"
+        
 
       items:
         visible:
@@ -32,6 +37,10 @@ $(window).load ->
     swipe:
       onTouch: true
       onMouse: true
+    next:
+      button: "#footer-right-arrow"
+    prev:
+      button: "#footer-left-arrow"
 
     items:
       visible:
