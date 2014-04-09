@@ -10,8 +10,34 @@
     <div id ="menu">
       <ul>
         <li><a rel='shadowbox' href="http://player.vimeo.com/video/90256241?autoplay=1" id="menu-reel" href="#">REEL 2013</a></li>
-        <li><a id="contact-link" href="">CONTACTO</a></li>
-        <li><a id="what-we-do-link" href="">¿QUÉ HACEMOS?</a></li>
+        <li><a id="contact-link" href="#contact-modal" class="fancybox">CONTACTO</a></li>
+        <div style="display: none">
+            <div id="contact-modal">
+              <div class="modal-logo">
+                <%= image_tag("logo.png")%>
+              </div>
+            </div>
+        </div>
+        <li><a id="what-we-do-link" href="#what-we-do-modal" class="fancybox">¿QUÉ HACEMOS?</a></li>
+        <div style="display: none">
+            <div id="what-we-do-modal">
+              <div class="modal-logo">
+                <%= image_tag("logo.png")%>
+              </div>
+              <p>
+                Ofrecemos soluciones audiovisuales a las empresas mediante videos institucionales, fotografía, publicidad y animación en 3D.
+              </p></br>
+              <p>
+                Registramos eventos corporativos, capacitaciones y cualquier tipo de actividad empresarial.
+              </p></br>
+              <p>
+                Documental y ficción
+              </p></br>
+              <p>
+                A través de televisión, internet y cine transmitimos nuestro mensaje que se compone de cine documental, cortometrajes y programas de TV.
+              </p></br>
+            </div>
+        </div>
       </ul>
     </div>
     <div id="social-bar">

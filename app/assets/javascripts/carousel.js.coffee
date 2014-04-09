@@ -1,5 +1,6 @@
 $(window).load ->
   $(document).on 'page:change', ->
+    $(".fancybox").fancybox();
     carousel = $("#sponsors-carousel")
     carousel.carouFredSel
       width: "100%"
@@ -24,6 +25,7 @@ $(window).load ->
           min: 8
           max: 8
 $(window).load ->
+  $(".fancybox").fancybox();
   carousel = $("#sponsors-carousel")
   carousel.carouFredSel
     width: "100%"
