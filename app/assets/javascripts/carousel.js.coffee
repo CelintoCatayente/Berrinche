@@ -1,6 +1,8 @@
+$(document).on 'page:change', ->
+  $(".fancybox").fancybox();
+
 $(window).load ->
   $(document).on 'page:change', ->
-    $(".fancybox").fancybox();
     carousel = $("#sponsors-carousel")
     carousel.carouFredSel
       width: "100%"
@@ -18,14 +20,12 @@ $(window).load ->
         button: "#footer-right-arrow"
       prev:
         button: "#footer-left-arrow"
-        
-
       items:
         visible:
           min: 8
           max: 8
+
 $(window).load ->
-  $(".fancybox").fancybox();
   carousel = $("#sponsors-carousel")
   carousel.carouFredSel
     width: "100%"
@@ -43,7 +43,6 @@ $(window).load ->
       button: "#footer-right-arrow"
     prev:
       button: "#footer-left-arrow"
-
     items:
       visible:
         min: 8
