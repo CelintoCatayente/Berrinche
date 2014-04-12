@@ -83,9 +83,10 @@ BerrincheSite::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address:              'smpt.berrinche.cl',
+    port:                 27,
     domain:               'berrinche.cl',
     user_name:            'contacto@berrinche.cl',
-    password:             'berrinche',
+    password:             'berrinche12344',
     authentication:       'plain',
     enable_starttls_auto: true  }
 end

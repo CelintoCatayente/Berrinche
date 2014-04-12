@@ -375,6 +375,9 @@ p{
   margin-bottom: 23px;
   border-bottom: solid;
   border-bottom-width: 1px;
+  img{
+    max-width: 191px;
+  }
 }
 #contact-modal{
   input, textarea{

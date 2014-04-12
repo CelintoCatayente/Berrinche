@@ -3,6 +3,6 @@ class WelcomeController < ApplicationController
   end
   
   def contact
-    AdminMailer.contact(params[:name], params[:email], params[:subject], params[:body])
+    AdminMailer.contact(params[:name], params[:email], params[:subject], params[:body]).deliver
   end
 end
