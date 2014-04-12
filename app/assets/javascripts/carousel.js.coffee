@@ -1,5 +1,7 @@
 $(document).on 'page:change', ->
-  $(".fancybox").fancybox();
+  $(".fancybox").fancybox
+    openEffect: "elastic"
+    openSpeed: 700
 
 $(window).load ->
   $(document).on 'page:change', ->
