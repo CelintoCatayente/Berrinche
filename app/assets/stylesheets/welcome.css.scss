@@ -379,8 +379,18 @@ p{
 #contact-modal{
   input, textarea{
     width: 100%;
+    font-family: "Concurso";
+    font-size: 15px;
   }
   label{
     font-family: "Concurso";
+  }
+  #contact-modal-form{
+    float: left;
+    width: 50%;
+  }
+  #contact-modal-likebox{
+    float: left;
+    width: 50%;
   }
 }

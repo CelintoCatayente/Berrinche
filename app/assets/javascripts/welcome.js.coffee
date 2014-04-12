@@ -8,34 +8,34 @@ $(document).on "page:change", ()->
 $(document).on "page:change", ()->
   $("#logo > li > img").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
-    $("#video-mosaic img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"1"})
     
   $("#link-documentales").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
     $("#link-documentales").addClass("active")
-    $("#video-mosaic img").removeClass("active")
-    $("#video-mosaic .documentales img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"0"})
+    $("#video-mosaic .documentales img").stop().animate({opacity:"1"})
   
   $("#link-publicidad").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
     $("#link-publicidad").addClass("active")
-    $("#video-mosaic img").removeClass("active")
-    $("#video-mosaic .publicidad img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"0"})
+    $("#video-mosaic .publicidad img").stop().animate({opacity:"1"})
     
   $("#link-self-production").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
-    $("#video-mosaic img").removeClass("active")
-    $("#video-mosaic .self-production img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"0"})
+    $("#video-mosaic .self-production img").stop().animate({opacity:"1"})
   
   $("#link-corporativos").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
     $("#link-corporativos").addClass("active")
-    $("#video-mosaic img").removeClass("active")
-    $("#video-mosaic .corporativos img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"0"})
+    $("#video-mosaic .corporativos img").stop().animate({opacity:"1"})
     
   $("#link-television").click ->
     $("#link-documentales, #link-publicidad, #link-self-production, #link-corporativos, #link-television").removeClass("active")
     $("#link-television").addClass("active")
-    $("#video-mosaic img").removeClass("active")
-    $("#video-mosaic .television img").addClass("active")
+    $("#video-mosaic img").stop().animate({opacity:"0"})
+    $("#video-mosaic .television img").stop().animate({opacity:"1"})
     
