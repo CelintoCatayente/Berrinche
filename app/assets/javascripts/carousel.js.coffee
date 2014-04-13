@@ -1,7 +1,14 @@
 $(document).on 'page:change', ->
-  $(".fancybox").fancybox
+  $("#what-we-do-link").fancybox
     openEffect: "elastic"
     openSpeed: 500
+    
+  $("#contact-link").fancybox
+    openEffect: "elastic"
+    openSpeed: 500
+    autoSize : false,
+    width: 900
+    height: 400
 
 $(window).load ->
   $(document).on 'page:change', ->
