@@ -28,4 +28,19 @@ BerrincheSite::Application.configure do
   config.assets.debug = true
   
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  
+  config.action_mailer.perform_deliveries = true
+	config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => '0.0.0.0:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'mail.berrinche.cl',
+    port:                 27,
+    domain:               'berrinche.cl',
+    user_name:            'contacto@berrinche.cl',
+    password:             'berrinche12344',
+    authentication:       'plain',
+    enable_starttls_auto: true,
+    openssl_verify_mode:  'none',
+  }
 end

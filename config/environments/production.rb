@@ -80,13 +80,17 @@ BerrincheSite::Application.configure do
   
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { :host => 'http://www.berrinche.cl/' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smpt.berrinche.cl',
+    address:              'mail.berrinche.cl',
     port:                 27,
     domain:               'berrinche.cl',
     user_name:            'contacto@berrinche.cl',
     password:             'berrinche12344',
     authentication:       'plain',
-    enable_starttls_auto: true  }
+    enable_starttls_auto: true,
+    openssl_verify_mode:  'none',
+  }
 end
