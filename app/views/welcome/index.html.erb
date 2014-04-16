@@ -3,12 +3,15 @@
 <div id="main">
   <div id="left-bar">
     <a>
-      <div id ="logo">
+      <div id="logo">
         <li>
-        <%= image_tag("logo.png")%>
+        <%= image_tag("logo-modal.png")%>
         </li>
       </div>
     </a>
+    <div id="restart-arrow">
+      <%= image_tag("restart-arrow.png")%>
+    </div>
     <div id ="menu">
       <ul>
         <li id="li-reel"><a rel='shadowbox' href="http://player.vimeo.com/video/90256241?autoplay=1" id="menu-reel" href="#">REEL 2013</a></li>
@@ -16,7 +19,7 @@
         <div style="display: none">
             <div id="contact-modal">
               <div class="modal-logo">
-                <%= image_tag("logo.png")%>
+                <%= image_tag("logo-modal.png")%>
               </div>
               <div id="contact-modal-form">
                 <%= form_tag('/contact', remote: true) do %>
@@ -32,23 +35,17 @@
               </div>
             </div>
         </div>
-        <li><a id="what-we-do-link" href="#what-we-do-modal" class="fancybox">¿QUÉ HACEMOS?</a></li>
+        <li><a id="what-we-do-link" href="#what-we-do-modal" class="fancybox">QUÉ HACEMOS</a></li>
         <div style="display: none">
             <div id="what-we-do-modal">
               <div class="modal-logo">
-                <%= image_tag("logo.png")%>
+                <%= image_tag("logo-modal.png")%>
               </div>
               <p>
-                Ofrecemos soluciones audiovisuales a las empresas mediante videos institucionales, fotografía, publicidad y animación en 3D.
+                Ofrecemos soluciones audiovisuales a las empresas mediante videos                institucionales, fotografía, publicidad y animación en 3D.</br>Registramos eventos corporativos, capacitaciones y cualquier tipo de actividad empresarial.
               </p></br>
               <p>
-                Registramos eventos corporativos, capacitaciones y cualquier tipo de actividad empresarial.
-              </p></br>
-              <p>
-                Documental y ficción
-              </p></br>
-              <p>
-                A través de televisión, internet y cine transmitimos nuestro mensaje que se compone de cine documental, cortometrajes y programas de TV.
+                A través del documental y la ficción, transmitimos un mensaje que puede ser elaborado para diferentes plataformas: Internet, cine y televisión.</br> Somos realizadores audiovisuales, lo que significa que trabajamos los contenidos y sensaciones con objetivos determinados.</br> Podemos hacer de tu idea un gran video.
               </p></br>
             </div>
         </div>
@@ -77,12 +74,28 @@
   </div>
   <div id="right-section">
     <div id="header">
-      <li><a id="link-documentales">DOCUMENTALES</a></li>
-      <li><a id="link-publicidad">PUBLICIDAD</a></li>
-      <li class="hidden"><a>----------</a></li>
+      <li>
+        <div class="wrapper-box" id="wrapper-box-documentales">
+          <a id="link-documentales">DOCUMENTALES</a>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper-box" id="wrapper-box-publicidad">
+          <a id="link-publicidad">PUBLICIDAD</a>
+        </div>
+      </li>
+      <li class="hidden"><a>---------------------</a></li>
       <li id="header-isologo"><div><%= image_tag("isologo.png", id: "link-self-production")%></div></li>
-      <li><a id="link-corporativos">CORPORATIVOS</a></li>
-      <li><a id="link-television">TELEVISIÓN</a></li>
+      <li>
+        <div class="wrapper-box" id="wrapper-box-corporativos">
+          <a id="link-corporativos">CORPORATIVOS</a>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper-box" id="wrapper-box-television">
+          <a id="link-television">TELEVISIÓN</a>
+        </div>
+      </li>
     </div>
     <div id="video-mosaic">
       <div id="big-row">
