@@ -1,10 +1,8 @@
 $(document).on 'page:change', ->
   $("#what-we-do-link").fancybox
-    openEffect: "elastic"
-    openSpeed: 500
+    openSpeed: 900
     
   $("#contact-link").fancybox
-    openEffect: "elastic"
     openSpeed: 500
     autoSize : false,
     width: 900
