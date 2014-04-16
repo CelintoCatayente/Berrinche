@@ -265,7 +265,6 @@
           }
           .video-box + .video-box{
             background-image: image-url("autosbn.jpg");
-            overflow-x: hidden;
           }
           height: 50%;
         }
@@ -276,7 +275,6 @@
           }
           .video-box + .video-box{
             background-image: image-url("carpenterbn.jpg");
-            overflow-x: hidden;
           }
           height: 50%;
         }
@@ -298,7 +296,6 @@
         }
         .video-box + .video-box + .video-box + .video-box{
           background-image: image-url("rodeobn.jpg");
-          overflow-x: hidden;
         }
         height: 34%;
       }
@@ -347,7 +344,6 @@
           text-align: center;
           img{
             display: inline;
-            width: 80px;
             max-width: 100%;
             max-height: 100%;
             padding-top: 3%;
