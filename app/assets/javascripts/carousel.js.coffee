@@ -8,51 +8,26 @@ $(document).on 'page:change', ->
     openSpeed: 500
     autoSize : false,
     width: 900
-    height: 400
+    height: 400    
 
-$(window).load ->
-  $(document).on 'page:change', ->
-    carousel = $("#sponsors-carousel")
-    carousel.carouFredSel
-      width: "100%"
-      height: "auto"
-      responsive: true
-      auto: true
-      scroll:
-        items: 1
-        fx: "scroll"
-        duration: 1200
-      swipe:
-        onTouch: true
-        onMouse: true
-      next:
-        button: "#footer-right-arrow"
-      prev:
-        button: "#footer-left-arrow"
-      items:
-        visible:
-          min: 8
-          max: 8
-
-$(window).load ->
-  carousel = $("#sponsors-carousel")
-  carousel.carouFredSel
-    width: "100%"
-    height: "auto"
+$(document).on 'page:change', ->
+  sponsordCarousel = $("#sponsors-carousel").bxSlider(
+    minSlides: 8,
+    maxSlides: 8,
+    moveSlides: 1,
+    slideWidth: 1000,
+    controls: false,
+    pager: false,
+    auto: true,
+    autoStart: true,
+    pause: 6000,
+    speed: 2500,
+    infiniteLoop: true,
+    preloadImages: 'all',
     responsive: true
-    auto: true
-    scroll:
-      items: 1
-      fx: "scroll"
-      duration: 1200
-    swipe:
-      onTouch: true
-      onMouse: true
-    next:
-      button: "#footer-right-arrow"
-    prev:
-      button: "#footer-left-arrow"
-    items:
-      visible:
-        min: 8
-        max: 8
+  )
+  $("#footer-left-arrow").click ->
+    sponsordCarousel.goToPrevSlide()
+
+  $("#footer-right-arrow").click ->
+    sponsordCarousel.goToNextSlide()
