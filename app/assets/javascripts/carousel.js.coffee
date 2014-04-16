@@ -31,3 +31,6 @@ $(document).on 'page:change', ->
 
   $("#footer-right-arrow").click ->
     sponsordCarousel.goToNextSlide()
+    
+$(window).load ->
+  $("#sponsors-carousel").css("visibility", "initial")
