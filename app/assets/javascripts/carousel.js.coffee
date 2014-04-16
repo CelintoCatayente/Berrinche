@@ -3,7 +3,7 @@ $(document).on 'page:change', ->
     openSpeed: 900
     
   $("#contact-link").fancybox
-    openSpeed: 500
+    openSpeed: 900
     autoSize : false,
     width: 900
     height: 400    
