@@ -52,10 +52,10 @@
       </ul>
     </div>
     <div id="social-bar">
-      <div class="social-icon"><a target="_blank" href="http://www.facebook.com/Berrinche"><%= image_tag("facebook.png")%></a></div>
-      <div class="social-icon"><a target="_blank" href="http://twitter.com/_berrinche"><%= image_tag("twitter.png")%></a></div>
-      <div class="social-icon"><a target="_blank" href="http://instagram.com/_berrinche"><%= image_tag("instagram.png")%></a></div>
-      <div class="social-icon"><a target="_blank" href="http://vimeo.com/berrincheproducciones"><%= image_tag("vimeo.png")%></a></div>
+      <div class="social-icon" id="social-icon-facebook"><a target="_blank" href="http://www.facebook.com/Berrinche"><%= image_tag("facebook.png")%></a></div>
+      <div class="social-icon" id="social-icon-twitter"><a target="_blank" href="http://twitter.com/_berrinche"><%= image_tag("twitter.png")%></a></div>
+      <div class="social-icon" id="social-icon-instagram"><a target="_blank" href="http://instagram.com/_berrinche"><%= image_tag("instagram.png")%></a></div>
+      <div class="social-icon" id="social-icon-vimeo"><a target="_blank" href="http://vimeo.com/berrincheproducciones"><%= image_tag("vimeo.png")%></a></div>
     </div>
     <div id ="description">
       <p>
@@ -73,7 +73,7 @@
     </div>
   </div>
   <div id="right-section">
-    <div id="header">
+    <ul id="header">
       <li>
         <div class="wrapper-box" id="wrapper-box-documentales">
           <a id="link-documentales">DOCUMENTALES</a>
@@ -84,7 +84,6 @@
           <a id="link-publicidad">PUBLICIDAD</a>
         </div>
       </li>
-      <li class="hidden"><a>---------------------</a></li>
       <li id="header-isologo"><div><%= image_tag("isologo.png", id: "link-self-production")%></div></li>
       <li>
         <div class="wrapper-box" id="wrapper-box-corporativos">
@@ -96,7 +95,7 @@
           <a id="link-television">TELEVISIÓN</a>
         </div>
       </li>
-    </div>
+    </ul>
     <div id="video-mosaic">
       <div id="big-row">
         <div class="square">

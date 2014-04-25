@@ -104,11 +104,41 @@
       height: 13%;
       padding-right: 20%;
       padding-top: 15%;
+      #social-icon-facebook{
+        background-image: image-url("facebook2.png");
+      }
+      #social-icon-facebook:hover a{
+        opacity: 0;
+      }
+      #social-icon-twitter{
+        background-image: image-url("twitter2.png");
+      }
+      #social-icon-twitter:hover a{
+        opacity: 0;
+      }
+      #social-icon-instagram{
+        background-image: image-url("instagram2.png");
+      }
+      #social-icon-instagram:hover a{
+        opacity: 0;
+      }
+      #social-icon-vimeo{
+        background-image: image-url("vimeo2.png");
+      }
+      #social-icon-vimeo:hover a{
+        opacity: 0;
+      }
       .social-icon{
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 25%;
         float: left;
         padding-right: 4%;
         a{
+          transition: opacity 0.5s ease;
+          display: block;
+          height: 30.484px;
+
           img{
             max-width: 100%;
             
@@ -155,7 +185,7 @@
     position: relative;
     #header{
       background-color: #f1f1f1;
-      padding-top: 0.9%;
+      padding-top: 1.7%;
       height: 7.5%;
       display: table;
       width: 100%;
@@ -163,13 +193,17 @@
       padding-right: 5%;
       z-index: 1;
       position: relative;
-      box-shadow: 0px 2px 6px -3px rgba(0,0,0, 0.6);
+      box-shadow: 0px 6px 6px -3px rgba(0,0,0, 0.6);
+      margin: 0;
       li{
         display: table-cell;
         vertical-align: middle;
         text-align: center;
         position: relative;
         z-index: 2;
+        float: left;
+        margin-left: 3%;
+        margin-right: 3%;
         div.wrapper-box{
           width: 132px;
           padding-left: 0%;
@@ -211,9 +245,7 @@
       }
       li#header-isologo{
         z-index: 1;
-        position: absolute;
-        left: -1px;
-        right: -1px;
+        height: 10px;
         div{
           display: inline;
           border-radius: 50%;
@@ -221,13 +253,15 @@
           img{
             max-width: 126px;
             cursor: pointer;
+            position: relative;
+            top: -13px;
           }
         }
       }
     }
     #video-mosaic{
       height: 83%;
-      
+      overflow-x: hidden;
       .video-overlay{
         width: 101%;
         height: 101%;
@@ -430,6 +464,10 @@ p{
     width: 100%;
     font-family: "Concurso";
     font-size: 15px;
+  }
+  [placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.5s 0.5s ease; 
+    opacity: 0;
   }
   input#name{
     margin-top: 0;
