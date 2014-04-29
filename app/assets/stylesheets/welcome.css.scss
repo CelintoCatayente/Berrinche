@@ -464,6 +464,7 @@ p{
     width: 100%;
     font-family: "Concurso";
     font-size: 15px;
+    resize: none;
   }
   [placeholder]:focus::-webkit-input-placeholder {
     transition: opacity 0.5s 0.5s ease; 

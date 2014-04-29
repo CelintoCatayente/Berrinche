@@ -52,6 +52,7 @@ and (min-width : 0px)
 {
   html body{
     width: 1280px;
+    height: 679px;
   }
   body #main #right-section #video-mosaic #big-row{
     height: 295.250px;
@@ -88,9 +89,7 @@ and (min-width : 0px)
 @media only screen
 and (max-height : 679px)
 {
-  html body{
-    height: 100%;
-  }
+
 }
 
 /* Large screens ----------- */
