@@ -71,16 +71,8 @@
           width: 100%;
           a#menu-reel{
             font-size: 2.5vw;
-            color: #820c09;
-            transition: all 0.5s ease;
           }
-          a#menu-reel:hover{
-            -moz-transform: scale(1.04) translate(2%, 0);
-            -webkit-transform: scale(1.04) translate(2%, 0);
-            -o-transform: scale(1.04) translate(2%, 0);
-            -ms-transform: scale(1.04) translate(2%, 0);
-            transform: scale(1.04) translate(2%, 0);
-          }
+
           a{
             color: black;
             display: table-cell;
