@@ -1,11 +1,11 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-$(document).on "page:change", ()->
+jQuery ->
   Shadowbox.init
     overlayOpacity: 0.9
 
-$(document).on "page:change", ()->
+jQuery ->
   $("#logo > li > img").click ->
     $("#wrapper-box-documentales, #wrapper-box-publicidad, #wrapper-box-corporativos, #wrapper-box-television, #restart-arrow").removeClass("active")
     $("#video-mosaic img").stop().animate({opacity:"1"})

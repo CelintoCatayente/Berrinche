@@ -1,4 +1,4 @@
-$(document).on 'page:change', ->
+jQuery ->
   $(".video-overlay").mouseover ->
     $(this).stop().animate({opacity:"0.8"})
   

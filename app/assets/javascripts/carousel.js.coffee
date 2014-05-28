@@ -1,4 +1,4 @@
-$(document).on 'page:change', ->
+jQuery ->
   $("#what-we-do-link").fancybox
     openSpeed: 900
     
@@ -8,7 +8,7 @@ $(document).on 'page:change', ->
     width: 900
     height: 400    
 
-$(document).on 'page:change', ->
+jQuery ->
   sponsordCarousel = $("#sponsors-carousel").bxSlider(
     minSlides: 8,
     maxSlides: 8,
